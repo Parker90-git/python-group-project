@@ -26,4 +26,15 @@ if __name__ == "__main__":
 playername=input("Hello, please enter your name: ")
 print("Hello", playername, "welcome to the adventure.")
 
+print("\n---Level 1: The Forest---")
+print("1. Continue")
+print("2. Turn back")
+while True:
+    choice2=input("Select your choice: ")
+    if choice2 == "1":
+        print("Excellent!")
+        break
+    elif choice2 == "2":
+        print("Too late.")
+
 
