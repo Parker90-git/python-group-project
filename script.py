@@ -208,3 +208,116 @@ while True:
         print("Returning you back to last save...")
     else:
         print("Invalid Choice. Please try again.")
+
+
+print("\nDESERT COMPLETE!")
+print("\n---FINAL LEVEL: Dragon's Lair---")
+print(". . . To defeat the dragon, you must find the Dragon's Sword!")
+chestpuzzle={"Chest 1":"Wooden Sword","Chest 2":"Brass Knuckles","Chest 3":"Dragon's Sword"}
+while True:
+    print("\nIn front of you are three chests:")
+    print("1. Open chest 1")
+    print("2. Open chest 2")
+    print("3. Open chest 3")
+    choice12=input("Select your choice: ")
+    if choice12 == "1":
+        print(chestpuzzle["Chest 1"])
+        print("\n---GAME OVER---")
+        print("Returning you back to last save...")
+    elif choice12 == "2":
+        print(chestpuzzle["Chest 2"])
+        print("\n---GAME OVER---")
+        print("Returning you back to last save...")
+    elif choice12 == "3":
+        print(chestpuzzle["Chest 3"])
+        break
+    else:
+        print("Invalid Choice. Please try again.")
+
+print("\n---THIS IS IT! FINAL ENCOUNTER!---")
+print("\n---SLAY THE DRAGON---")
+while True:
+    print("\nWhich part of the dragon do you want to attack?")
+    print("1. Head")
+    print("2. Tail")
+    print("3. Arms")
+    print("4. Legs")
+    print("5. Wings")
+    choice13=input("Select your choice: ")
+    if choice13 == "1":
+        print("The head is too high up!")
+        print("The dragon spews out fire!")
+        print("1. Dodge")
+        print("2. Reflect")
+        choice14=input("Select your choice: ")
+        if choice14 == "1":
+            print("That was close!")
+        elif choice14 == "2":
+            print("You reflect the fireball back!")
+            print("The dragon is DIZZY!")
+            print("1. Attack")
+            print("2. Wait")
+            choice15=input("Select your choice: ")
+            if choice15 == "1":
+                print("You SLICED the dragon's head!")
+                print("\n---EASY ENDING---")
+                break
+            elif choice15 == "2":
+                print("Why would you do that.")
+                print("\n---GAME OVER---")
+                print("Returning you back to last save...")
+            else:
+                print("Invalid Choice. Please try again.")
+        else:
+            print("Invalid Choice. Please try again.")
+    elif choice13 == "2":
+        print("That's the least of your concerns!")
+        print("The dragon took the opportunity to ATTACK!")
+        print("\n---GAME OVER---")
+        print("Returning you back to last save...")
+    elif choice13 == "3":
+        print("You SLICED the dragon's arms!")
+        print("It panics and attempts to attack with its LEGS!")
+        print("1. Block")
+        print("2. Counterattack")
+        choice16=input("Select your choice: ")
+        if choice16 == "1":
+            print("The weight of the dragon crushes you!")
+            print("\n---GAME OVER---")
+            print("Returning you back to last save...")
+        elif choice16 == "2":
+            print("You SLICE the dragon's legs!")
+            print("The dragon FLEW AWAY in fear!")
+            print("\n---BRAVE ENDING---")
+            break
+        else:
+            print("Invalid Choice. Please try again.")
+    elif choice13 == "4":
+        print("You SLICE the legs off!")
+        print("The dragon panics and attempts to attack with its ARMS!")
+        print("1. Block")
+        print("2. Counterattack")
+        choice17=input("Select your choice: ")
+        if choice17 == "1":
+            print("The weight of the dragon crushes you!")
+            print("\n---GAME OVER---")
+            print("Returning you back to last save...")
+        elif choice17 == "2":
+            print("You SLICE the arms off!")
+            print("The dragon FLEW AWAY in fear!")
+            print("\n---BRAVE ENDING---")
+            break
+        else:
+            print("Invalid Choice. Please try again.")
+    elif choice13 == "5":
+        print("You THROW the dragon sword like a boomerang!")
+        print("The wings cut RIGHT off!")
+        print("You dash under the dragon to prepare a finishing blow!")
+        print("\n. . .The dragon crushes you.")
+        print("What a way to go out.")
+        print("\n---BAD ENDING---")
+        break
+    else:
+        print("Invalid Choice. Please try again.")
+
+print("\n---THANK YOU FOR PLAYING!---")
